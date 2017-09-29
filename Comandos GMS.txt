@@ -1,0 +1,667 @@
+ara definir seus personagens como admin [GM] fazer da seguinte forma:
+
+1 - Encerrar o servidor. (Sim, não deveria, mas sem ele talvez não salvar as alterações no conjunto admin)
+
+2 - Agora vá para:
+
+"Login" banco de dados,
+
+em seguida, a "mesa" ACCOUNT_DATA,
+
+procure lá por "colo" access_level,
+
+alterar esse valor colo de "0" para "3" se você quiser fazer todos os personagens de que os administradores da conta.
+
+PS: Você pode definir valores de 1, 2 ou 3 para os direitos de administrador diferentes. Valor 3 é Admin Master.
+
+3 - Inicie o servidor novamente e divirta-se os comandos de admin.
+
+*****************************************************************************
+
+Admin Command List:
+
+*****************************************************************************
+
+//promote <characterName> <rolemask>
+
+dar direitos de administrador para o jogador
+
+PS: rolemask = 1,2,or 3 to full admin.
+
+//revoke characterName
+
+revogar direitos de administrador para o jogador
+
+//add <player> <item ID> <quantity>
+
+Adiciona um item para o jogador de inventário
+
+//remove <player> <item ID> <quantity>
+
+Adiciona um item de inventário jogador
+
+//addset <player> <itemset ID>
+
+Adiciona um item definido para o jogador de inventário
+
+//addskill <skillId> <skillLevel>
+
+Adiciona uma habilidade para seu jogador alvo
+
+//givemissingskills
+
+Recursivamente verificar todas as habilidades dos jogadores em falta e adicioná-los a ele
+
+//addtitle <title_id> <playerName>
+
+Adiciona um título para o seu jogador alvo
+
+//announce <message>
+
+a mensagem é enviada para todos os jogadores chatbox
+
+//announcefaction <ely | asmo> <message>
+
+mensagem é enviada para todos os jogadores da raça especificado na chatbox
+
+//notice <message>
+
+a mensagem é enviada a todos os jogadores chatbox e uma mensagem aparecerá no centro da tela
+
+//info <target>
+
+show target object infos
+
+//playerinfo <playername> <loc | item | group | skill | legion>
+
+show target player parameter infos
+
+//set level <level>
+
+Sets target player level
+
+PS: max level 50
+
+//set exp <value>
+
+meta fixada quantidade experiência do jogador
+
+//set title <title_id>
+
+Set target player title
+
+Complete Title ID List:
+
+id=1 Poeta's Protector
+
+id=2 Verteron's Warrior
+
+id=3 Bottled Lightning
+
+id=4 Tree-Hugger
+
+id=5 Krall Hunter
+
+id=6 Straw for Brains
+
+id=7 Animal Lover
+
+id=8 Fluent in Krall
+
+id=9 Patient
+
+id=10 Mabangtah's Envoy
+
+id=11 Demolitions Expert
+
+id=12 Eltnen's Hero
+
+id=13 Klaw Hunter
+
+id=14 Aerialist
+
+id=15 Kobold Chef
+
+id=16 Respects the Fallen
+
+id=17 Eulogist
+
+id=18 Love Cynic
+
+id=19 Anti-Counterfeiter
+
+id=20 Savior of Eiron Forest
+
+id=21 Honorary Meniherk Union Member
+
+id=22 Lonely Bounty Hunter
+
+id=23 Recognized by Arbolu
+
+id=24 Chief Investigator
+
+id=25 Defeater of the Indratu Legion
+
+id=26 Belbua's Benefactor
+
+id=27 Poor Camouflage Master
+
+id=28 Experienced Fisher
+
+id=29 Excellent Spy
+
+id=30 Fluent in Balaur
+
+id=31 Tough
+
+id=32 Battle-Hardened
+
+id=33 Invincible
+
+id=34 Heroic
+
+id=35 Pirate Busting
+
+id=36 Top Expert
+
+id=37 Miragent Holy Templar
+
+id=38 Adept DP Manipulator
+
+id=39 Daeva in White
+
+id=40 Owner of the Dragon Sword
+
+id=41 Honorary Black Cloud
+
+id=42 Krall Slaughterer
+
+id=43 Gatekeeper Hunter
+
+id=44 Obstinate Herdsman
+
+id=45 Gullible
+
+id=46 Azoturan Destroyer
+
+id=47 Project Drakanhammer Researcher
+
+id=48 Homuron Knights
+
+id=49 The One who Confronted Fate
+
+id=50 Savior of Future
+
+id=51 Raider Hero
+
+id=52 Treasure Hunter
+
+id=53 Mosbear Slayer
+
+id=54 Fluent in Mau
+
+id=55 Kind
+
+id=56 Legendary Hunter
+
+id=57 Protector of Altgard
+
+id=58 Tayga Slayer
+
+id=59 Courageous Destructor
+
+id=60 Protector of Morheim
+
+id=61 Shugo Chef
+
+id=62 Energized after eating Millennium Ginseng
+
+id=63 Honorary Kidorun
+
+id=64 Champion of the Elderly
+
+id=65 Friend of Kong and Pat
+
+id=66 Silver Mane Benefactor
+
+id=67 Postal
+
+id=68 Slayer of Mabangtah
+
+id=69 Tenacious
+
+id=70 Fast, Exact, and Reliable
+
+id=71 Unyielding Pioneer
+
+id=72 Protector of Brusthonin
+
+id=73 Cheated by Sleipnir
+
+id=74 Beluslan's Hero
+
+id=75 Hunter of the Snowfield
+
+id=76 Savior of Besfer Villagers
+
+id=77 Sweeper of Mt. Musphel
+
+id=78 Ancient Book Collector
+
+id=79 All the Way to Elysea for Nothing i
+
+id=80 Fluent in Balaur
+
+id=81 Tough
+
+id=82 Battle-Hardened
+
+id=83 Invincible
+
+id=84 Heroic
+
+id=85 Steel Rake Demolisher
+
+id=86 Top Expert
+
+id=87 Fenris's Fang
+
+id=88 DP Test Passing
+
+id=89 Light on the Battlefield
+
+id=90 Owner of Agrif's Rage
+
+id=91 Wheeler-Dealer
+
+id=92 Poking into Everything
+
+id=93 Gatekeeper Stabber
+
+id=94 True Friend of Silver Mane
+
+id=95 Born Merchant
+
+id=96 Marked One
+
+id=97 Expert Vengeful Spirit Consoler
+
+id=98 Pirate of the Carobian
+
+id=99 The One who Changed Destiny
+
+id=100 Future Traveling
+
+id=101 Settler of Aion
+
+id=102 As You Wish
+
+id=103 Adept of Aion
+
+id=104 Shining Intellectual
+
+id=105 Sage of Aion
+
+id=106 Very Generous
+
+//set class <class_id>
+
+Definir classe jogador alvo
+
+Class ID's:
+
+Warrior - 0
+
+Gladiator - 1
+
+Templar - 2
+
+Scout - 3
+
+Assassin - 4
+
+Ranger - 5
+
+Mage - 6
+
+Sorcerer - 7
+
+Spirit Master - 8
+
+Priest - 9
+
+Cleric - 10
+
+Chanter - 11
+
+//invis
+
+switch char para você visível ou invisível
+
+//invul
+
+switch char para você invulnerável ou vulneráveis
+
+//speed <speed>
+
+adds speed value to you (%)
+
+PS: Value from 100-200
+
+//heal <target player>
+
+fully restore hp/mp/dp of target player
+
+//kill <playername>
+
+kills the named player
+
+//kick <playername>
+
+disconnect the named player
+
+//sprison <playername> <delay>
+
+send player to prison
+
+//rprison <playername> <delay>
+
+return player from prison
+
+//unstuck
+
+moves you to bind point
+
+//moveplayertoplayer <player1> <player2>
+
+move player1 to player2 location
+
+//movetome <player>
+
+move player to my position
+
+//movetoplayer <player>
+
+teleports you to player position
+
+//movetonpc <npcID>
+
+teleports you to npc position
+
+//moveto < X Y Z>
+
+teleport to specified XYZ coordinates
+
+complete list of location coordinates to be used with //moveto comand:
+
+* Sanctum - //moveto 110010000 1532 1511 565
+
+* Poeta - //moveto 210010000 526 1461 106
+
+* Verteron - //moveto 210030000 1339 2195 143
+
+* Eltnen - //moveto 210020000 1487 1466 300
+
+* Theobomos - //moveto 210060000 1400 1550 31
+
+* Interdiktah - //moveto 210040000 1508 1568 112
+
+* Pandaemonium - //moveto 120010000 1268 1428 208
+
+* Ishalgen (Asmodian Starting Zone) - //moveto 220010000 850 2218 267
+
+* Altgard - //moveto 220030000 1781 1930 261
+
+* Morheim - //moveto 220020000 872 2180 337
+
+* Brusthonin - //moveto 220050000 2428 2298 13
+
+* Beluslan - //moveto 220040000 1967 2533 590
+
+* Ereshuranta (Abyss) - //moveto 400010000 1365 1177 1516
+
+* No Zone Name - //moveto 300010000 225 276 206
+
+* Karamatis - //moveto 310010000 225 276 206
+
+* Karamatis (not sure why there are two of these) - //moveto 310020000 225 276 206
+
+* Aerdina (Abyss Gate) - //moveto 310030000 269 173 204
+
+* Geranaia (Abyss Gate) - //moveto 310040000 269 173 204
+
+* Lepharist (Bio Experiment Lab) - //moveto 310050000 191 324 125
+
+* Fragment of Darkness - //moveto 310060000 1618 782 1188
+
+* Fragment of Darkness (not sure why there are two of these) - //moveto 310070000 83 238 1222
+
+* Sanctum Underground Arena - //moveto 310080000 276 185 162
+
+* Indratu (Castle Indratu) - //moveto 310090000 560 335 1016
+
+* Azoturan (Castle Lehpar) - //moveto 310100000 359 410 1537
+
+* Narsass - //moveto 320010000 225 276 206
+
+* Narsass (not sure why there are two of these) - //moveto 320020000 225 276 206
+
+* Bregirun (Abyss Gate) - //moveto 320030000 269 175 204
+
+* Nidalber (Abyss Gate) - //moveto 320040000 269 175 204
+
+* Inside of the Sky Temple of Arkanis 320050000 128 133 575
+
+* Space of Oblivion - //moveto 320060000 1709 807 1226
+
+* Space of Destiny - //moveto 320070000 256 252 126
+
+* Draupnir - //moveto 320080000 493 600 513 (central control room)
+
+* Draupnir - //moveto 320080000 762 431 321 (beritra oracle chamber)
+
+* Triniel Underground Arena - //moveto 320090000 276 183 162
+
+* Fire Temple - //moveto 320100000 148 455 142
+
+* Alquimia - //moveto 320110000 545 527 200
+
+* Secret Prison - //moveto 320120000 454 553 225
+
+* Player Prison 1- //moveto 510010000 229 257 50
+
+* Player Prison 2- //moveto 520010000 229 257 50
+
+* Test Basic - //moveto 900020000 151 135 20
+
+* Test Server - //moveto 900030000 403 254 50
+
+* Test Giant Monster - //moveto 900100000 245 323 20
+
+//goto <place name>
+
+teletransportar-se para o nome local especificado
+
+example: //goto poeta
+
+lista completa de nomes local para ser usado com / comand goto /:
+
+poeta
+
+verteron
+
+eltnen
+
+theobomos
+
+heiron
+
+sanctum
+
+ishalgen
+
+altgard
+
+morheim
+
+brusthonin
+
+beluslan
+
+pandaemonium
+
+abyss1
+
+abyss2
+
+abyss3
+
+abyss4
+
+abyssfortress
+
+senza
+
+karamatis1
+
+karamatis2
+
+aerdina
+
+gerania
+
+lepharist
+
+fragment
+
+sanctumarena
+
+idratu
+
+azoturan
+
+ataxiar1
+
+ataxiar2
+
+bregirun
+
+nidalber
+
+skytemple
+
+space
+
+trinielarena
+
+firetemple
+
+reshanta
+
+prison1
+
+prison2
+
+test1
+
+test2
+
+test3
+
+//bk <add|del|tele|list> <bookmark name>
+
+Manage bookmark teleport locations
+
+//legion disband <legionname>
+
+//legion setlevel <legionname> <level>
+
+//legion setpoints <legionname> <contributionpoints>
+
+//legion setname <legionname> <newlegionname>
+
+all self explanatory
+
+//spawn <npc_id>
+
+spawn npc template id
+
+//delete <target npc>
+
+delete spawned npc id
+
+//save_spawn
+
+save all spawn data to files
+
+//reload_spawn
+
+Atualizar todos os dados de arquivos de spawn
+
+//adddrop <mobid> <itemid> <min> <max> <chance> <quest>
+
+adicionar itens ao npc dropList
+
+//zone
+
+prints your current zone
+
+//reload skill
+
+self explanatory
+
+//reload quest
+
+self explanatory
+
+//quest <start|delete|step|info|vars> <quest_id>
+
+for developers use only to test quests
+
+//sys <info> | <memory> | <gc> | <restart> | <shutdown>
+
+//sys info
+
+show basic server host informations
+
+//sys memory
+
+shows host memory informations
+
+//sys gc
+
+show garbage collector informations
+
+//sys restart <countdown time in seconds> <announce delay in seconds>
+
+restart the server in given time
+
+//sys shutdown <countdown time in seconds> <announce delay in seconds>
+
+restart the server in given time
+
+/ / Ai <info|event|state>
+
+para os desenvolvedores utilizem apenas
+
+/ / Tempo <location> 0 <- 8>
+
+exemplos:
+
+/ Poeta do tempo / 0 -> para definir céu claro na região
+
+Reset / tempo / -> para mudar aleatoriamente todos os tempos em todo o mundo
+
+Sintaxe usa definições mesmo local que ele faz sobre o comando goto /.
+
+/ / Fsc <packet <opcode> structure> <valores>
+
+/ Advsendfakeserverpacket /
+
+/ Sendfakeserverpacket /
+
+/ Sendrawpacket /
+
+Este comando envia pacotes para o servidor para testar porpouses --- usada por desenvolvedores
+
+//add 182400001 "valor a vontarde"  adicionando kinah ^^

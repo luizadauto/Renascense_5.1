@@ -1,0 +1,1710 @@
+************************************************** ****************************************
+Admin Command List:
+************************************************** ****************************************
+__________________________________________________ _____
+
+AION Admin Zeug und Befehle Sammlung
+
+__________________________________________________ _____
+
+System: Server
+
+//sys | | | |
+
+//sys info
+show basic server host informations
+//sys memory
+shows host memory informations
+//sys gc
+show garbage collector informations
+//sys restart
+restart the server in given time
+//sys shutdown
+restart the server in given time
+
+//ai
+for developers use only
+
+//weather <0 - 8>
+examples:
+//weather poeta 0 -> to set clear sky in this region
+//weather reset -> to change randomly all weathers in the world
+Syntax uses same location definitions as it does on the //goto command.
+
+
+//fsc
+//advsendfakeserverpacket
+//sendfakeserverpacket
+//sendrawpacket
+
+//sys | | | |
+
+//sys info
+show basic server host informations
+//sys memory
+shows host memory informations
+//sys gc
+show garbage collector informations
+//sys restart
+restart the server in given time
+//sys shutdown
+restart the server in given time
+
+
+This commands sends packets to the server for test porpouses --- Used by Developers (NOT TESTED)
+
+//map Warps you to map of
+//jail Sends character to “Flying Bird” jail, cannot escape.
+//jail 2 Sends character to Zakum jail, can pay 10mil mesos to escape.
+//lolcastle Warps you to Field of Judgment map of is 1 – 5
+//warp Warps you to player with
+//warp Warps player with to map of
+//toggleoffense Gives player an FASTATTACK --- MOVE_MONSTERS --- TUBI --- FAST_HP_REGEN --- FAST_MP_REGEN --- SAME_DAMAGE --- ATTACK_WITHOUT_GETTING_HIT --- HIGH_DAMAGE --- ATTACK_FARAWAY_MONSTER --- REGEN_HIGH_HP --- ITEMVAC --- SHORT_ITEMVAC --- USING_FARAWAY_PORTAL --- FAST_TAKE_DAMAGE --- FAST_MOVE --- HIGH_JUMP --- MISMATCHING_BULLETCOUNT --- ETC_EXPLOSION --- FAST_SUMMON_ATTACK --- ATTACKING_WHILE_DEAD
+//warphere Warps player with to you.
+//spawn Spawns of Optional args: Spawn with amount of HP and gives amount of exp.
+//servermessage Changes scrolling top message at top of screen to
+//array ...Random "Array" in chat message.
+//notice Announces to designated group. w = to server, c = to channel, m = to map
+//notice [n | p | l | nv | v | b] Announces to designated group. n = blue notice, p = dialog notice, l = white notice, nv = [Notice] red, v = red without [Notice], b = blue without [Notice]
+//job Changes your job.
+//clock Shows "Time Left" Clock... Another test command.
+//pill Gives Dexterity Pill.
+//item Gives you of item with
+//drop Drops of item with
+//shop Opens GM shop, accessed anywhere
+//equip Opens GM equip shop, accessed anywhere
+//clearshops Reloads shop database.
+//cleardrops Reloads drop database.
+//clearevents Reloads events.
+//clearquest Resets quest to "NOT_STARTED".
+//gps Unused Test Command.
+//sp Sets your SP to
+//fakerelog Removes you from map and then Adds you back to spawn point.
+//test Test command, not used.
+//dc Disconnects user from server.
+//charinfo Shows Character ID, x and y position, currentHP/MaxHP, currentMP/MaxMP, Experience, If they are in a Party or Trade, If they are connected, and some debug stuff.
+//ban Bans from the server. Bans Account, IP and MAC Address.
+//levelup Levels you up 1 level.
+//whereami Shows the ID of the map you are on.
+//version Shows Revision Info.
+//connected Shows number of clients connected to the server.
+//whosthere Shows players on the map.
+//shutdown
+//shutdownworld
+//shutdownnow
+//timerdebug
+//threads
+//showtrace
+//dumpthreads
+//reloadops
+//killall Kills all monsters on map.
+//monsterdebug Shows info of all monsters on map.
+//skill Adds skill points to skillid.
+//spawndebug
+//door Makes door. Test Command, don't use this.
+//tdrops Toggles monster drops on and off for that map.
+//lowhp Sets hp to 1 and mp to 500.
+//fullhp Gets players maxHP not counting items additions and sets HP to that.
+//cheaters Shows players that are suspected of cheating.
+
+
+__________________________________________________ ________________________________________
+
+Ingame:
+
+************************************************** ****************************************
+Admin Command List:
+************************************************** ****************************************
+
+Only For Admins ***
+
+//promote
+give admin rights to player
+PS: rolemask = 1,2,or 3 to full admin.
+
+//revoke characterName
+revoke admin rights to player
+
+//announce
+the message is sent to all players chatbox
+
+//announcefaction
+the message is sent to all players from the specified race on the chatbox
+
+//notice
+the message is sent to all players chatbox and a message appear in center screen
+
+//info
+show target object infos
+
+//playerinfo
+show target player parameter infos
+
+
+//invis
+switch you char to invisible or visible
+
+//invul
+switch you char to invulnerable or vulnerable
+
+//speed
+adds speed value to you (%)
+PS: Value from 100-200
+
+//heal
+fully restore hp/mp/dp of target player
+
+//kill
+kills the named player
+
+//kick
+disconnect the named player
+
+//sprison
+send player to prison
+
+//rprison
+return player from prison
+
+//unstuck
+moves you to bind point
+
+//moveplayertoplayer
+move player1 to player2 location
+
+//movetome
+move player to my position
+
+//movetoplayer
+teleports you to player position
+
+//movetonpc
+teleports you to npc position
+
+//moveto < X Y Z>
+teleport to specified XYZ coordinates
+
+
+//spawn
+spawn npc template id
+
+//delete
+delete spawned npc id
+
+//save_spawn
+save all spawn data to files
+
+//reload_spawn
+reload all spawn data from files
+
+//adddrop
+add items to npc droplist
+
+//zone
+prints your current zone
+
+//reload skill
+self explanatory
+
+//reload quest
+self explanatory
+
+//quest
+for developers use only to test quests
+
+//bk
+Manage bookmark teleport locations
+
+//legion disband
+//legion setlevel
+//legion setpoints
+//legion setname
+all self explanatory
+
+//spawn
+spawn npc template id
+
+//delete
+delete spawned npc id
+
+//save_spawn
+save all spawn data to files
+
+//reload_spawn
+reload all spawn data from files
+
+//adddrop
+add items to npc droplist
+
+//zone
+prints your current zone
+
+//reload skill
+self explanatory
+
+//reload quest
+self explanatory
+
+//quest
+for developers use only to test quests
+
+__________________________________________________ ________________________________________
+
+Complete list of location coordinates to be used with:
+__________________________________________________ ________________________________________
+
+//moveto < X Y Z>
+teleport to specified XYZ coordinates
+
+
+################################################## ######################
+################################################## #####
+ASMODIAN ################################################## #####
+################################################## #####
+################################################## ######################
+
+__________
+| Ishalgen |
+------------------------------------------------------------------------
+Start (born point): 220010000 574.55524 2787.5369 299.86923
+Aldelle Village: 220010000 527.0243 2449.5547 281.59262
+Anturoon Sentry Post: 220010000 940.8271 1707.3097 259.6728
+Eyvindr Anchorage: 220010000 1227.9733 1877.0564 255.62065
+Hatata's Hideout: 220010000 665.4184 860.92474 321.06543
+Ishalgen Prison Camp: 220010000 389.9415 1894.6752 327.2995
+Lake Tunapre: 220010000 534.7985 2291.941 248.87227
+Odella Plantation: 220010000 458.40982 1442.6447 345.10043
+------------------------------------------------------------------------
+_____________
+| Pandemonium |
+------------------------------------------------------------------------
+Pandemonium (Teleporter): 120010000 1685.3838 1400.4843 195.3448
+Airship Dock: 120010000 951.75385 1124.9325 206.84679
+Capitol Builidng: 120010000 1275.6866 1169.3015 215.21492
+Great Temple: 120010000 1469.6608 1460.8645 177.52342
+Pandaemonium Plasza: 120010000 1277.1027 1341.8479 204.42003
+Temple of Artisans: 120010000 1187.0708 1578.3636 214.24734
+Temple of Gold: 120010000 1339.8086 1523.0211 209.80017
+Temple of Knowledge: 120010000 1352.8713 1151.3505 213.67839
+Triniel Coliseum: 120010000 942.98236 1591.7323 221.84903
+Vanahal District: 120010000 832.6555 1343.6182 218.05367
+------------------------------------------------------------------------
+_________
+| Altgard |
+------------------------------------------------------------------------
+Altgard (Teleporter): 220030000 1752.9733 1806.7135 254.66133
+Altar of Tiamat: 220030000 1543.3663 881.84784 253.00194
+Altgard East Gate: 220030000 1747.5485 2005.1666 248.2947
+Basfelt Village: 220030000 1903.2565 696.99115 260.66977
+Black Claw Outpost: 220030000 1818.3654 2259.3 280.25192
+Black Claw Outpost 2: 220030000 1969.9288 2404.9966 322.43283
+Black Claw Outpost 3: 220030000 1985.6538 2678.903 350.5575
+Black Claw Outpost 4: 220030000 2203.534 2461.707 332.22754
+Black Claw Village: 220030000 2262.4316 2330.5525 294.1056
+Calderon Hill: 220030000 1559.8436 2390.2615 268.3359
+Gribadde Crater Lake: 220030000 2460.8018 670.1019 320.18713
+Gerger Village: 220030000 2359.3604 880.4023 324.32925
+Heart of Impetusium (base): 220030000 2613.5947 1638.3168 253.0198
+Idun's Lake: 220030000 1825.074 439.89474 277.997
+Imperusuim hearth (top): 220030000 2623.8591 1655.7194 336.57828
+Kaibech's Campsite: 220030000 1205.5543 976.7212 254.03485
+Karl's Campsite: 220030000 1354.0405 1235.2192 252.1271
+Lephrarist Encampment: 220030000 1699.5469 2644.425 288.59668
+Mahindel Swamp: 220030000 1684.4409 2255.2056 251.30872
+Manir's Campsite: 220030000 1460.3774 1196.1597 258.5
+Manir's Dock: 220030000 1354.0405 1235.2192 252.1271
+Moslan Crossroad: 220030000 1628.1505 1448.2557 255.24051
+Moslan Relics: 220030000 1373.9298 1377.3304 280.96252
+Mumu Farmland: 220030000 1781.5277 1318.9713 288.73102
+Mumu Village: 220030000 1559.0251 225.87143 284.61676
+Observatory: 220030000 1483.2662 2543.263 298.8547
+Seggurheim: 220030000 2411.3137 1313.8088 267.4149
+Trader's Berth: 220030000 2679.856 1025.0437 311.76324
+Zemurru's Grave: 220030000 2474.922 2440.6895 255.51093
+Zemurru's Grave(Arbre): 220030000 2484.3962 2629.2336 318.1984
+------------------------------------------------------------------------
+_________
+| Morheim |
+------------------------------------------------------------------------
+Morheim (Teleporter): 220020000 310.4568 2271.2932 449.41266
+Airship Crash Site: 220020000 2038.9858 2782.228 246.31976
+Alsig Village: 220020000 2388.2344 1742.1155 102.06115
+Altar of the Black Dragon: 220020000 2091.5952 1128.0115 193.45644
+Arkanis Sky Temple: 220020000 1696.1168 1481.785 181.55318
+Chaikata's Hideout: 220020000 2245.2156 1463.6326 128.0047
+Fortress of Sorrow: 220020000 1161.0947 909.59845 381.57285
+Giant Rock Waterfall: 220020000 849.89984 2211.9731 336.62668
+Halabana Hot Springs: 220020000 2645.982 2221.6711 98.6064
+Ice Claw Village: 220020000 991.0426 480.69843 512.327
+Kasaka's Wood Cave: 220020000 2931.248 883.09467 369.91656
+Kellan's Cabin: 220020000 1072.1722 2513.802 239.6015
+Kentari Village: 220020000 287.91315 1106.6984 335.36957
+Klaw Habitat: 220020000 2445.3208 2831.7222 107.875
+Lava Cave of Taran(Entrée): 220020000 1580.9878 2728.144 370.59647
+Lepharist Citadel: 220020000 2974.9268 2713.031 218.4266
+Mist Man Training Ground: 220020000 2631.8574 434.90942 212.17334
+Mist Man Village: 220020000 2575.8262 560.1122 226.55809
+Morheim Obszevatory: 220020000 2793.043 1106.5898 171.83081
+Mt Musphel: 220020000 1779.6526 1666.9116 197.625
+Munmun Ginseng Plantation: 220020000 290.4787 434.16986 430.875
+Nunu Village: 220020000 2273.7446 485.8818 232.79507
+Patamor Thicket: 220020000 890.4339 2943.2537 276.72537
+Red Lava Cliff: 220020000 1804.7605 2139.8137 241.33316
+Road to Altgad: 220020000 406.23587 2953.5425 324.86026
+Road to Beluslan: 220020000 2044.0962 2993.8228 249.03796
+Salintus Observation Post: 220020000 634.0401 901.1401 360.60086
+Salintus Rise: 220020000 116.11046 329.0274 443.8888
+Silver Mane Village: 220020000 2369.0967 1409.6244 115.69359
+Sprigg Habitat: 220020000 993.7903 1891.8907 230.5
+Wonshikutz's Labotary: 220020000 2709.291 2570.0068 158.97295
+------------------------------------------------------------------------
+____________
+| Brusthonin |
+------------------------------------------------------------------------
+Brusthonin (Teleporter): 220050000 2917.3806 2417.5222 15.24525
+Adma Plains: 220050000 1979.1514 346.07755 222.61531
+Adma Stronghold: 220050000 2207.0146 177.2646 245.19832
+Baltasar Cemetery: 220050000 1082.5245 2471.7378 92.73586
+Baltasar Hill Village: 220050000 1413.1908 2013.1013 51.668358
+Brohunir: 220050000 906.8067 2942.2964 279.125
+Brusthonin Mithril Mine: 220050000 718.9399 2605.356 125.92326
+Bubu Village: 220050000 526.4525 848.3295 76.08503
+Carobian Coast: 220050000 610.4552 242.55852 9.469076
+Griffon's Claw Encampment: 220050000 2346.0195 1336.0388 33.122574
+Havenjark Cemetery: 220050000 1866.2317 2586.4824 35.981125
+Havenjark Farm: 220050000 1978.0634 2052.4165 23.120682
+Iollu Forest: 220050000 379.74875 1764.9186 302.57776
+Iollu Hills: 220050000 52.232517 1371.6226 145.88564
+Nahor Lake: 220050000 1651.0382 1267.4972 43.46611
+Old Nahor Castle: 220050000 1813.6068 890.53064 58.853542
+Perpet Falls: 220050000 296.33917 1975.6898 254.375
+Polluted Waste: 220050000 2794.8882 1956.6415 20.264404
+Stragglers' Shelter: 220050000 512.14825 468.26035 7.740196
+Sudorville: 220050000 1063.7969 2088.1843 73.875
+The Coastal Pass: 220050000 989.5303 554.65326 97.24609
+The Eastweald: 220050000 1638.0789 1639.7732 57.18299
+The Golden Coast: 220050000 2359.3179 2928.5315 5.9226084
+The Legend Shrine: 220050000 1281.7687 2607.9744 97.673065
+The Norhtweald: 220050000 1119.5616 1210.4922 59.378124
+The Saplands: 220050000 692.4644 1270.1337 65.29077
+Vigrid Plains: 220050000 2535.3838 1720.6897 23.250214
+Wailing Cliffs: 220050000 1822.7692 2840.9883 73.56326
+------------------------------------------------------------------------
+__________
+| Beluslan |
+------------------------------------------------------------------------
+Beluslan (Teleporter): 220040000 334.89706 328.4665 229.67873
+Alukina's Palace: 220040000 578.2238 2510.5854 287.4593
+Anair Harbor: 220040000 495.10532 1822.834 208.67975
+Anair Ice Lake: 220040000 495.10532 1822.834 208.67975
+Anair Lighthouse: 220040000 486.3841 2223.0427 315.80316
+Berita's Weapon: 220040000 863.23816 1468.8558 213.65494
+Besfer Ghost Village: 220040000 1081.2897 1696.2572 235.64108
+Besfer Refugee Camp: 220040000 533.9011 1867.1088 262.5731
+Black Plains: 220040000 689.4741 784.91156 237.70766
+Camp Kistenian: 220040000 1915.2952 476.0754 411.05347
+Ghost Village Obsevation: 220040000 595.1733 788.77985 232.375
+Giant's Valley: 220040000 966.53064 483.03955 308.85608
+Kurnagalfberg: 220040000 2016.3951 170.02708 389.37177
+Malek Mine Workshop: 220040000 1371.7579 1110.8998 150.54799
+Malek Mine: 220040000 1435.821 1136.7361 236.78587
+Malek Diggings: 220040000 1451.2637 1471.3105 313.79602
+Malisha's Nest: 220040000 1020.3627 953.67224 246.9412
+Mist Valley: 220040000 1644.3423 1059.9061 284.52515
+Mosbear Snowfield: 220040000 166.33728 1190.8977 186.9181
+Mosbear Snowfield Cave: 220040000 120.01904 1506.2823 317.14322
+Road to Morheim: 220040000 966.53064 483.03955 308.85608
+The Lone Cottage: 220040000 1288.3064 307.0345 344.56033
+The Sacred Orchaard: 220040000 2059.1802 118.44134 370.33487
+The Wispering Forest: 220040000 912.2396 2265.9563 318.0896
+------------------------------------------------------------------------
+_______
+| Abyss |
+------------------------------------------------------------------------
+Asmodian Teleporter: 400010000 1596 2952 2943
+Asmodian Fortress: 400010000 1059.4078 2859.276 1636.4055
+------------------------------------------------------------------------
+
+
+################################################## ######################
+################################################## #####
+ELYOS ################################################## #####
+################################################## #####
+################################################## ######################
+
+_______
+| Poeta |
+------------------------------------------------------------------------
+Start (born point): 210010000 1212.3246 1044.6901 140.72716
+Agaric Spore Road: 210010000 242.94421 1644.4523 100.25945
+Akarios Village: 210010000 806.0054 1242.6986 118.98627
+Clion Lake: 210010000 673.95886 1041.8936 100.87865
+Daminu Forest: 210010000 553.5668 1569.5765 110.767914
+Deforested Area: 210010000 426.72504 1740.1973 119.925865
+Kabarah Strip Mine: 210010000 289.7933 2084.268 171.03351
+Timolia Mine: 210010000 285.83566 1019.79376 131.52922
+------------------------------------------------------------------------
+_________
+| Sanctum |
+------------------------------------------------------------------------
+Sanctum (teleporter): 110010000 1313.6405 1512.1721 568.107
+Airship Dock: 110010000 1661.0526 1576.9445 548.73676
+Coliseum: 110010000 1430.8455 1258.5295 564.1927
+Dionysia Tavern: 110010000 1812.0186 2123.9873 529.0868
+Elyos Square: 110010000 1532.5189 1511.452 565.88245
+Library of the Sages: 110010000 2044.8655 1511.4934 581.3614
+Lyceum: 110010000 1400.1659 1683.2672 573.12286
+Protectors Hall Base: 110010000 1865.8284 1539.5358 590.16956
+Protectors Hall Top: 110010000 1874.6959 1510.9843 812.6755
+Tempest Shipyard: 110010000 1958.9352 1798.5668 581.77313
+------------------------------------------------------------------------
+__________
+| Verteron |
+------------------------------------------------------------------------
+Verteron (Teleporter): 210030000 1641.2505 1500.0352 119.964615
+Altamia Ridge: 210030000 1980.8988 2638.1401 302.01752
+Ardus Shrine: 210030000 2293.2432 1707.8304 120.3079
+Cantas Coast: 210030000 2384.9846 788.1361 102.55294
+Contaminated Swamp: 210030000 1823.4226 2737.1401 283.49963
+Dukaki Mine: 210030000 872.45667 2015.236 167.33713
+Dukaki Settlement: 210030000 660.3003 2628.9924 240.98123
+Ellun River Mouth: 210030000 1641.2505 1500.0352 119.964615
+Frillneck Woods: 210030000 1683.5869 2475.2183 153.77567
+Kraka's Den: 210030000 2686.276 1068.6694 199.63033
+Mysterious Shipwreck: 210030000 2085.856 600.5415 122.569466
+Northern Tolbas Forest: 210030000 1159.6433 1838.8578 101.92861
+Pilgrims' Respite: 210030000 2062.9338 2412.6873 274.13495
+Tolbas Village: 210030000 1269.9098 2174.5186 151.125
+Tursin Garrison: 210030000 2367.987 1256.451 174.77756
+Tursion Outpost: 210030000 1869.8402 923.1974 119.25999
+Tursin Outpost 2: 210030000 2070.0334 1106.1061 128.3949
+Zumion Canyon: 210030000 1266.0696 2632.2288 207.8837
+------------------------------------------------------------------------
+________
+| Eltnen |
+------------------------------------------------------------------------
+Eltnen (Teleporter): 210020000 344.56696 2723.6772 264.17618
+Agairon Village: 210020000 2000.1005 1950.5173 367.4136
+Caldera Outpost: 210020000 2048.9229 1383.2329 429.375
+Drake Habitat: 210020000 1691.6996 1923.6389 331.98123
+Eastern Eracus Desert: 210020000 732.6913 1208.6123 282.28796
+Eiron Desert: 210020000 464.68958 1774.3173 240.29395
+Eltnen Observatory: 210020000 1745.5469 895.6835 421.76978
+Geroch Caldera: 210020000 2365.6633 1449.638 411.63666
+Golden Bouch Garrison: 210020000 673.1473 481.5262 336.08917
+Kaidan Headquarters: 210020000 2427.765 740.2561 382.62924
+Kaidan Mine: 210020000 1309.2432 2581.824 288.0667
+Klaw Den: 210020000 558.1895 194.62256 304.61316
+Klaw Nest: 210020000 1661.2108 1414.7618 370.25
+Kuriullu Mountain: 210020000 1810.2529 2618.67 356.23975
+Kuriullu Mountain Outpost: 210020000 2431.9423 2762.1013 364.875
+Kuriullu Pass: 210020000 2466.471 1892.929 450.30804
+Kyola Temple: 210020000 1434.081 396.1475 365.45654
+Lankusis Plateau: 210020000 1748.89 1175.2045 419.125
+Lepharist Citadel 1: 210020000 2547.5757 2278.7651 303.65753
+Lepharist Citadel 2: 210020000 1960.3921 2673.0867 289.17926
+Lepharist Citadel 3: 210020000 2723.393 2659.003 286.96207
+Manduri Forest: 210020000 685.64703 2561.3623 229.16913
+Manduri Stores: 210020000 903.13885 2642.4617 240.875
+Manduri Village: 210020000 735.03687 2228.631 231.0
+Mystic Spring of Agairon: 210020000 2055.7173 1651.0884 360.29758
+Mystic Spring of Anathe: 210020000 1313.6346 1570.1396 291.99127
+Mystic Spring of Laquepin: 210020000 1664.7599 2279.4067 331.33087
+Outpost Ruins: 210020000 946.1437 2190.6746 252.65671
+Prellus Wasteland: 210020000 1582.7529 1275.9463 340.9933
+Putrid Mire: 210020000 238.96652 2065.285 211.91455
+Refugee Camp: 210020000 1519.7482 1745.319 312.10925
+Ruberein Wastes: 210020000 1016.4783 1822.4342 277.59787
+Sataloca's Tomb: 210020000 223.32835 1247.8594 289.6968
+Tigric Village: 210020000 1778.485 653.2375 431.69858
+Western Eracus Desert: 210020000 1036.0137 500.49857 314.06403
+------------------------------------------------------------------------
+________
+| Heiron |
+------------------------------------------------------------------------
+Heiron (Teleporter): 210040000 2542.2686 339.29117 411.89975
+Arbolu's Haven: 210040000 227.1419 1617.8247 114.0
+Black Tears Swamp: 210040000 1670.5074 1540.1425 113.04766
+Changarnerk's Campsite: 210040000 914.3839 2224.4377 157.375
+Contesded Expanse: 210040000 2250.325 1854.8253 191.19681
+Deathsong Forest: 210040000 658.0798 1311.0658 110.91843
+Decayed Grove: 210040000 1579.8329 1827.5977 133.75
+Drangon's Blood Canyon: 210040000 2566.8005 2326.1968 137.81233
+Gloomy Mire: 210040000 1334.906 1656.6265 126.125
+Gray Fog Marshes: 210040000 944.0209 1677.5667 109.027084
+Heironopolis: 210040000 2479.6672 679.1578 370.4803
+Heiron Pass: 210040000 1781.24 467.0582 180.06932
+Heiron Observatory: 210040000 1476.3995 1379.3329 183.84164
+Indratu Barracks: 210040000 2403.3792 2064.2507 143.80447
+Jeiaparan Village: 210040000 1591.6447 2774.2634 127.62981
+Kakuna's Nest: 210040000 777.353 941.6642 122.711716
+Kishar Observation Post: 210040000 2000.8938 1386.5911 119.1881
+Kishar Village: 210040000 2315.6575 1438.6241 125.375
+Klawtan's Wallow: 210040000 1118.742 361.75668 105.46959
+Kunpapa Outpost: 210040000 2722.9175 1259.4535 309.8183
+Lepharist Research Center 1: 210040000 518.3466 671.8512 152.553
+Lepharist Research Center 2: 210040000 266.4054 563.54315 165.36195
+Mandury Valley: 210040000 841.4255 579.28284 113.125
+Manor Cemetery: 210040000 168.1119 1889.6985 111.77584
+Medeus Altar: 210040000 273.19904 2537.2039 134.77321
+Medeus Manor East: 210040000 559.9903 2146.0662 104.75
+Medeus Manor West: 210040000 496.5561 1686.6663 104.027695
+Monitor Farm: 210040000 2883.9104 2198.8792 145.0095
+Nolantis Ruins: 210040000 415.8373 2549.9927 138.6153
+Nute Warrens (Entrance): 210040000 2410.359 2386.561 158.4129
+Nute Warrens (Entrance 2): 210040000 2493.7917 2698.2056 151.77586
+Nute Warrens (Boss): 210040000 1863.2694 2647.6572 149.03452
+Orton Farm: 210040000 1037.8292 2154.2793 135.61432
+Patema Ruins: 210040000 1423.4539 2426.4011 135.875
+Poya Jungle: 210040000 1154.4691 784.5016 134.50203
+Puitonen Bogs: 210040000 1268.1838 2600.2717 153.26149
+Ruined Drake Temple: 210040000 180.58644 2703.797 115.36232
+Senea's Campsite: 210040000 988.0694 706.3005 135.14378
+Stenon Bay: 210040000 440.43582 2933.0884 106.65882
+The Storm Circle: 210040000 1077.0028 2930.0605 142.3082
+Tigric Village: 210040000 745.5655 260.16962 129.65085
+Vaizel's Peak: 210040000 2222.9373 801.12634 297.09738
+------------------------------------------------------------------------
+
+___________
+| Theobomos |
+------------------------------------------------------------------------
+Theobomos (Teleporter): 210060000 1395.7567 1560.1633 31.134554
+Alisary Coast: 210060000 2683.5725 1072.2664 95.72748
+Anangke Port: 210060000 2676.708 829.7583 138.35718
+Calydon Village: 210060000 833.548 777.925 174.25
+Calydon Village 2: 210060000 616.499 312.2098 174.125
+Calydon Village 3: 210060000 268.22867 82.45433 172.75
+Calydon Village 4: 210060000 440.8682 642.13666 132.375
+Cascade Springs: 210060000 2567.0317 1917.479 65.096405
+Crimson Barrens: 210060000 1702.9343 1316.2421 22.48487
+Dirmoi Pass: 210060000 1445.4039 2148.987 136.16388
+Dirmoi Shrine: 210060000 910.5047 2782.9932 62.000854
+Dirmoi Valley: 210060000 756.5873 559.5247 18.875
+Empyrean Lord Sanctuary: 210060000 1355.9249 2813.5273 73.96577
+Fregion's Flame: 210060000 357.7949 2453.4734 53.44699
+Gust Valley: 210060000 827.06287 897.92426 201.81795
+Jamanok Inn: 210060000 615.42035 1224.7632 90.125
+Marla Cave Inside: 210060000 1730.2773 168.08607 86.469734
+Marla Cave Entrance: 210060000 1075.8588 332.834 14.25
+Marla Cave Exit: 210060000 2157.952 175.18245 211.67911
+Northern Latheron Coast: 210060000 2110.359 2833.2778 56.612427
+Observatory Village: 210060000 2284.2888 2149.9094 60.684814
+Parched Barrens: 210060000 1940.1705 2052.9568 24.48394
+Parched Barrens 2: 210060000 1773.0476 2501.5327 53.889645
+Revenge Valley: 210060000 1523.0941 785.64684 53.783447
+Sneeze Crater: 210060000 2707.4983 1653.3776 48.625
+Southern Latheron Coast: 210060000 2644.226 2541.8484 48.120346
+The Scorchlands: 210060000 2089.2253 1748.129 28.25
+The Stalking Grounds: 210060000 542.2804 1865.5825 65.9708
+Theobomos Ruins: 210060000 2050.1648 864.9538 23.6353
+Theobomos Ruins 2: 210060000 2303.4043 933.5644 32.481247
+Theobomos Stronghold: 210060000 2715.269 409.40298 210.33769
+------------------------------------------------------------------------
+
+_______
+| Abyss |
+------------------------------------------------------------------------
+Elyos Teleporter: 400010000 2054 660 2843
+Elyos Fortress: 400010000 2885.641 1014.2253 1528.3395
+------------------------------------------------------------------------
+__________________________________________________ ________________________________________
+
+Teleport Yourself
+__________________________________________________ ________________________________________
+
+//goto
+teleport youself to specified place name
+example: //goto poeta
+
+LIST OF DEFINITION NAMES
+
+poeta
+verteron
+eltnem
+theobomos
+heiron
+sanctum
+ishalgen
+altgard
+morheim
+brusthonin
+beluslan
+pandaemonium
+abyss1 <- Latis Plazza bottom Elyos
+abyss2 <- Russet Plazza bottom Asmodians
+abyss3 <- Top Asmodians
+abyss4 <- Top Elyos
+abyssfortress <- Core Fortress
+senza
+karamatis1
+karamatis2
+aerdina
+gerania
+lepharist <- Lerpharist Secret Labratory
+fragment <- Fragment of Darkness
+sanctumarena <- Sanctum Underground Arena
+idratu <- Indratu Fortress
+azoturan <- Azoturan Fortress
+ataxiar1 <- Narsass 1
+ataxiar2 <- Narsass 2
+bregirun
+nidalber
+skytemple <- Sky Temple of Arkanis
+space <- Space of Destiny
+trinielarena <- Triniel Underground Arena
+firetemple
+reshanta
+prison1 <- Prison Elyos
+prison2 <- Prison Asmodian
+test1 <- Giant Monster
+test2 <- Test Basic
+test3 <- Test Server
+
+
+__________________________________________________ ________________________________________
+
+Costum list of GM Commands added by patches:
+__________________________________________________ ________________________________________
+
+//equip help
+=>This command will give you the same information as below.
+Use //equip help for more details on the command.
+Notice: This command uses smart matching. You may abbreviate most commands.
+For example: "//equip so 167000551 5" will match to "//equip socket 167000551 5"
+
+//equip [playerName] enchant [EnchantLevel = 0]
+This command Enchants all items equipped up to 255.
+Notice: You can ommit parameters between [], especially playerName.
+Target: Named player, then targeted player, only then self.
+Default Value: EnchantLevel is 0.
+
+//equip [playerName] socket [ManastoneID = 167000551] [Quantity = 0]
+This command Sockets all free slots on equipped items, with the given manastone id.
+Use ManastoneID = 0 to remove all Manastones. Quantity = 0 means to fill all free slots.
+Notice: You can ommit parameters between [], especially playerName.
+Target: Named player, then targeted player, only then self.
+Default Value: ManastoneID is 167000551 witch is [Manastone: HP +95], Quantity is 0 meaning fill all slots.
+
+//equip [playerName] godstone [rate = 100|GodStoneID]
+This command changes the godstone activation rate to the given number(0-100).
+Give a GodStone ItemID and it will be socketed on you Main Hand Weapon.
+Notice: You can ommit parameters between [], especially playerName.
+Target: Named player, then targeted player, only then self.
+Default Value: Rate is 100 witch is the default action .
+
+//powerup [playerName] [Multiplier = 2]
+This command multiplies your actual power to the number given.
+Using 0 as the Multiplier resets the power to normal.
+Notice: You can ommit parameters between [], especially playerName.
+Target: Named player, then targeted player, only then self.
+Default Value: Multiplier is 2.
+
+//powerup
+This command Makes u super powerfull, use number to multiply your power, with a multiplier of 10+ u can kill any monster in game alone with ease, and 100+ instant kill anything. Multipliers stack using the command twice with Multiplier = 2 will make u 4 times stronger, 2 times stronger than before.
+Default multiplier = 2
+Use 0 to disable it.
+I created this so I could fight Anuhart alone, and now I use to kill the Guardian Deity on siege.
+
+//socket
+This command Sockets all free slots on all equipped items with the given manastone id, Use 0 to remove all Manastones.
+Default Manastone is [Manastone: HP +85].
+The parameter "true" means to add only 1 manastone per item, THIS PARAMETER CAN BE INGNORED
+I created this to spare time socketing many items, witch annoys me even if the rate is 100%
+
+//enchant
+This command Enchants all equipped items up to 255. Default EnchantLevel = 0
+I created this to spare time echanting many items, witch annoys me even if the rate is 100% AND a power boost option besides //powerup
+
+//godstone
+This command changes the rate that the godstone on the main weapon gets activated from 0 to 100
+If a Item id i provided and it is a godstone it will socket it on the main weapon.
+Default rate = 100
+
+All commands:
+//command help
+
+================================================== ========================================
+Tuning
+
+Use the provided sql/2551_enchant.sql file on database to increase the max enchant number from 127 to 255. OR run the query below
+Use the query below on your database to increase the max enchant number from 127 to 255.
+Code:Insert Query
+
+ALTER TABLE `inventory` MODIFY COLUMN `enchant` tinyint(1) UNSIGNED NULL DEFAULT 0 AFTER `itemLocation`;
+================================================== ========================================
+
+
+***
+
+================================================== ========================================
+Commands Aply To Player/Target:
+================================================== ========================================
+
+//set class
+Set target player class
+
+Set target player class
+Warrior - 0
+Gladiator - 1
+Templar - 2
+Scout - 3
+Assassin - 4
+Ranger - 5
+Mage - 6
+Sorcerer - 7
+Spirit Master - 8
+Priest - 9
+Cleric - 10
+Chanter - 11
+
+//add
+Adds an item to player inventory
+
+//remove
+Adds an item from player inventory
+
+//addset
+Adds an item set to player inventory
+
+//addskill
+Adds a skill to your target player
+
+//givemissingskills
+Will recursively check all missing player skills and add them to him
+
+//addtitle
+Adds a title to your target player
+
+//set level
+Sets target player level
+PS: max level 50
+
+//set exp
+Set target player experience amount
+
+//set title
+Set target player title
+
+__________________________________________________ ________________________________________
+
+Complete Title ID List:
+__________________________________________________ ________________________________________
+
+
+//set title
+Set target player title
+
+id=1 Poeta's Protector
+id=2 Verteron's Warrior
+id=3 Bottled Lightning
+id=4 Tree-Hugger
+id=5 Krall Hunter
+id=6 Straw for Brains
+id=7 Animal Lover
+id=8 Fluent in Krall
+id=9 Patient
+id=10 Mabangtah's Envoy
+id=11 Demolitions Expert
+id=12 Eltnen's Hero
+id=13 Klaw Hunter
+id=14 Aerialist
+id=15 Kobold Chef
+id=16 Respects the Fallen
+id=17 Eulogist
+id=18 Love Cynic
+id=19 Anti-Counterfeiter
+id=20 Savior of Eiron Forest
+id=21 Honorary Meniherk Union Member
+id=22 Lonely Bounty Hunter
+id=23 Recognized by Arbolu
+id=24 Chief Investigator
+id=25 Defeater of the Indratu Legion
+id=26 Belbua's Benefactor
+id=27 Poor Camouflage Master
+id=28 Experienced Fisher
+id=29 Excellent Spy
+id=30 Fluent in Balaur
+id=31 Tough
+id=32 Battle-Hardened
+id=33 Invincible
+id=34 Heroic
+id=35 Pirate Busting
+id=36 Top Expert
+id=37 Miragent Holy Templar
+id=38 Adept DP Manipulator
+id=39 Daeva in White
+id=40 Owner of the Dragon Sword
+id=41 Honorary Black Cloud
+id=42 Krall Slaughterer
+id=43 Gatekeeper Hunter
+id=44 Obstinate Herdsman
+id=45 Gullible
+id=46 Azoturan Destroyer
+id=47 Project Drakanhammer Researcher
+id=48 Homuron Knights
+id=49 The One who Confronted Fate
+id=50 Savior of Future
+id=51 Raider Hero
+id=52 Treasure Hunter
+id=53 Mosbear Slayer
+id=54 Fluent in Mau
+id=55 Kind
+id=56 Legendary Hunter
+id=57 Protector of Altgard
+id=58 Tayga Slayer
+id=59 Courageous Destructor
+id=60 Protector of Morheim
+id=61 Shugo Chef
+id=62 Energized after eating Millennium Ginseng
+id=63 Honorary Kidorun
+id=64 Champion of the Elderly
+id=65 Friend of Kong and Pat
+id=66 Silver Mane Benefactor
+id=67 Postal
+id=68 Slayer of Mabangtah
+id=69 Tenacious
+id=70 Fast, Exact, and Reliable
+id=71 Unyielding Pioneer
+id=72 Protector of Brusthonin
+id=73 Cheated by Sleipnir
+id=74 Beluslan's Hero
+id=75 Hunter of the Snowfield
+id=76 Savior of Besfer Villagers
+id=77 Sweeper of Mt. Musphel
+id=78 Ancient Book Collector
+id=79 All the Way to Elysea for Nothing i
+id=80 Fluent in Balaur
+id=81 Tough
+id=82 Battle-Hardened
+id=83 Invincible
+id=84 Heroic
+id=85 Steel Rake Demolisher
+id=86 Top Expert
+id=87 Fenris's Fang
+id=88 DP Test Passing
+id=89 Light on the Battlefield
+id=90 Owner of Agrif's Rage
+id=91 Wheeler-Dealer
+id=92 Poking into Everything
+id=93 Gatekeeper Stabber
+id=94 True Friend of Silver Mane
+id=95 Born Merchant
+id=96 Marked One
+id=97 Expert Vengeful Spirit Consoler
+id=98 Pirate of the Carobian
+id=99 The One who Changed Destiny
+id=100 Future Traveling
+id=101 Settler of Aion
+id=102 As You Wish
+id=103 Adept of Aion
+id=104 Shining Intellectual
+id=105 Sage of Aion
+id=106 Very Generous
+
+
+__________________________________________________ ________________________________________
+
+Complete Set ID List:
+__________________________________________________ ________________________________________
+
+//addset or
+Set target player title
+
+
+//addset 1 Cloth Armor Set (Test)
+//addset 2 Sword Shield Set (Test)
+//addset 3 Twin Earrings Set (Test)
+//addset 4 Belt Necklace Ring Set 1 (Test)
+//addset 5 Belt Necklace Ring Set 2 (Test)
+//addset 6 Wise Cloth Set
+//addset 7 Flash Leather Set
+//addset 8 Mercy Chain Set
+//addset 9 Courage Plate Set
+//addset 10 Wise Cloth Set
+//addset 11 Flash Leather Set
+//addset 12 Mercy Chain Set
+//addset 13 Courage Plate Set
+//addset 14 Miragent Cloth Set
+//addset 15 Miragent Leather Set
+//addset 16 Miragent Chain Set
+//addset 17 Miragent Plate Set
+//addset 18 Fenris Cloth Set
+//addset 19 Fenris Leather Set
+//addset 20 Fenris Chain Set
+//addset 21 Fenris Plate Set
+//addset 22 Theobomos Cloth Set
+//addset 23 Theobomos Leather Set
+//addset 24 Theobomos Chain Set
+//addset 25 Theobomos Plate Set
+//addset 26 Brusthonin Cloth Set
+//addset 27 Brusthonin Leather Set
+//addset 28 Brusthonin Chain Set
+//addset 29 Brusthonin Plate Set
+//addset 30 Nagolem's Plate Set
+//addset 31 Hornskull's Leather Set
+//addset 32 Hornskull's Chain Set
+//addset 33 Gust Cloth Set
+//addset 34 Gust Leather Set
+//addset 35 Vines Cloth Set
+//addset 36 Fang Accessory Set
+//addset 37 Corruption Chain Set
+//addset 38 Corruption Cloth Set
+//addset 39 Charge Plate Set
+//addset 40 Charge Accessory Set
+//addset 41 Mud Leather Set
+//addset 42 Dionae's Accessory Set
+//addset 43 Clandestine Cloth Set
+//addset 44 Clandestine Leather Set
+//addset 45 Clandestine Chain Set
+//addset 46 Clandestine Plate Set
+//addset 47 Berserk Spirit's Cloth Set
+//addset 48 Berserk Spirit's Leather Set
+//addset 49 Berserk Spirit's Chain Set
+//addset 50 Berserk Spirit's Plate Set
+//addset 51 Ancient Spirit's Ruby Set
+//addset 52 Ancient Spirit's Sapphire Set
+//addset 53 Ancient Spirit's Diamond Set
+//addset 54 Adma Guard's Cloth Set
+//addset 55 Adma Guard's Leather Set
+//addset 56 Adma Guard's Chain Set
+//addset 57 Adma Guard's Plate Set
+//addset 58 Adma Elite's Cloth Set
+//addset 59 Adma Elite's Leather Set
+//addset 60 Adma Elite's Chain Set
+//addset 61 Adma Elite's Plate Set
+//addset 62 Lonely Ruby Set
+//addset 63 Lonely Sapphire Set
+//addset 64 Lonely Diamond Set
+//addset 65 Anuhart Scale Sword Set
+//addset 66 Anuhart Dirk Set
+//addset 67 Anuhart Azure Scale Sword Set
+//addset 68 Anuhart Warhammer Set
+//addset 69 Anuhart Gladiator Set
+//addset 70 Anuhart Templar Set
+//addset 71 Anuhart Assassin Set
+//addset 72 Anuhart Ranger Set
+//addset 73 Anuhart Cleric Set
+//addset 74 Anuhart Chanter Set
+//addset 75 Anuhart Sorcerer Set
+//addset 76 Anuhart Spiritmaster Set
+//addset 77 Anuhart Legionary Plate Set
+//addset 78 Anuhart Legionary Leather Set
+//addset 79 Anuhart Legionary Chain Set
+//addset 80 Anuhart Legionary Cloth Set
+//addset 81 Steel Beard Pirate Plate Set
+//addset 82 Shulack Pirate Plate Set
+//addset 83 Shulack Sailor Plate Set
+//addset 84 Steel Beard Pirate Leather Set
+//addset 85 Shulack Pirate Leather Set
+//addset 86 Shulack Sailor Leather Set
+//addset 87 Steel Beard Pirate Chain Set
+//addset 88 Shulack Pirate Chain Set
+//addset 89 Shulack Sailor Chain Set
+//addset 90 Steel Beard Pirate Cloth Set
+//addset 91 Shulack Pirate Cloth Set
+//addset 92 Shulack Sailor Cloth Set
+//addset 93 Elite Guardian Squad Leader's Cloth Set
+//addset 94 Elite Guardian Centurion's Cloth Set
+//addset 95 Elite Guardian Tribunus's Cloth Set
+//addset 96 Elite Guardian Squad Leader's Leather Set
+//addset 97 Elite Guardian Centurion's Leather Set
+//addset 98 Elite Guardian Tribunus's Leather Set
+//addset 99 Elite Guardian Squad Leader's Chain Set
+//addset 100 Elite Guardian Centurion's Chain Set
+//addset 101 Elite Guardian Tribunus's Chain Set
+//addset 102 Elite Guardian Squad Leader's Plate Set
+//addset 103 Elite Guardian Centurion's Plate Set
+//addset 104 Elite Guardian Tribunus's Plate Set
+//addset 105 Dragon Flame Cloth Set
+//addset 106 Hellfire Cloth Set
+//addset 107 Hellfire Cloth Set
+//addset 108 Dragon Flame Leather Set
+//addset 109 Hellfire Leather Set
+//addset 110 Hellfire Leather Set
+//addset 111 Dragon Flame Chain Set
+//addset 112 Hellfire Chain Set
+//addset 113 Hellfire Chain Set
+//addset 114 Dragon Flame Plate Set
+//addset 115 Hellfire Plate Set
+//addset 116 Hellfire Plate Set
+//addset 117 Elite Archon Squad Leader's Cloth Set
+//addset 118 Elite Archon Centurion's Cloth Set
+//addset 119 Elite Archon Tribunus's Cloth Set
+//addset 120 Elite Archon Squad Leader's Leather Set
+//addset 121 Elite Archon Centurion's Leather Set
+//addset 122 Elite Archon Tribunus's Leather Set
+//addset 123 Elite Archon Squad Leader's Chain Set
+//addset 124 Elite Archon Centurion's Chain Set
+//addset 125 Elite Archon Tribunus's Chain Set
+//addset 126 Elite Archon Squad Leader's Plate Set
+//addset 127 Elite Archon Centurion's Plate Set
+//addset 128 Elite Archon Tribunus's Plate Set
+
+__________________________________________________ ________________________________________
+
+German Complete Set ID List:
+__________________________________________________ ________________________________________
+
+
+Anuhart Gladiator Set: //addset 69
+Anuhart Templar Set: //addset 70
+Anuhart Assassin Set: //addset 71
+Anuhart Ranger Set: //addset 72
+Anuhart Cleric Set: //addset 73
+Anuhart Chanter Set: //addset 74
+Anuhart Sorcerer Set: //addset 75
+Anuhart SpiritMaster Set: //addset 76
+
+Miragent Plate Set: //addset 17
+Miragent Leather Set: //addset 15
+Miragent Chain Set: //addset 16
+Miragent Cloth Set: //addset 18
+
+Elite Archon Tribunus Plate Set: //addset 128
+Elite Archon Tribunus Leather Set: //addset 122
+Elite Archon Tribunus Chain Set: //addset 125
+Elite Archon Tribunus Cloth Set: //addset 119
+
+Anuhart Legionary Plate Set: //addset 77
+Anuhart Legionary Leather Set: //addset 78
+Anuhart Legionary Chain Set: //addset 79
+Anuhart Legionary Cloth Set: //addset 80
+
+Dragon Flame Plate Set: //addset 114
+Dragon Flame Leather Set: //addset 108
+Dragon Flame Chain Set: //addset 111
+Dragon Flame Cloth Set: //addset 105
+
+
+-Anuhart Assassin Set-
+-
+http://www.aionarmory.com/itemset.aspx?id=71
+-
+Anuhart Assassin Jerkin: //add 110300917
+Anuhart Assassin Leather Pauldrons: //add 112300817
+Anuhart Assassin's Leather Shoes: //add 114300926
+Anuhart Assassin Leather Leggings: //add 113300893
+Anuhart Assassin's Leather Gloves: //add 111300867
+__________________________________________________ _____
+
+-Anuhart Ranger Set-
+-
+http://www.aionarmory.com/itemset.aspx?id=72
+-
+Anuhart Ranger Jerkin: //add 110300918
+Anuhart Ranger Leather Pauldrons: //add 112300818
+Anuhart Ranger's Leather Shoes: //add 114300927
+Anuhart Ranger Leather Leggings: //add 113300894
+Anuhart Ranger's Leather Gloves: //add 111300868
+__________________________________________________ _____
+
+-Anuhart Chanter Set-
+-
+http://www.aionarmory.com/itemset.aspx?id=74
+-
+Anuhart Chanter Mail: //add 110500886
+Anuhart Chanter Chain Greaves: //add 113500860
+Anuhart Chanter Chain Pauldrons: //add 112500809
+Anuhart Chanter's Chain Gloves: //add 111500858
+Anuhart Chanter Chain Boots: //add "114500870
+__________________________________________________ _____
+
+-Anuhart Cleric Set-
+-
+http://www.aionarmory.com/itemset.aspx?id=73
+-
+Anuhart Cleric Mail: //add 110500885
+Anuhart Cleric Chain Greaves: //add 113500859
+Anuhart Cleric Chain Pauldrons: //add 112500808
+Anuhart Cleric's Chain Gloves: //add 111500857
+Anuhart Cleric Chain Boots: //add 114500869
+__________________________________________________ _____
+
+-Anuhart Legionary Chain Set-
+-
+http://www.aionarmory.com/itemset.aspx?id=79
+-
+Anuhart Legionary's Mail: //add 110500884
+Anuhart Legionary's Chain Greaves: //add 113500858
+Anuhart Legionary's Chain Pauldrons: //add 112500807
+Anuhart Legionary's Chain Gloves: //add 111500856
+Anuhart Legionary's Chain Boots: //add 114500868
+__________________________________________________ _____
+
+-Dragon Flame Chain Set-
+-
+http://www.aionarmory.com/itemset.aspx?id=111
+-
+Dragon Flame Mail: //add 110500883
+Dragon Flame Chain Greaves: //add 113500857
+Dragon Flame Chain Pauldrons: //add 112500806
+Dragon Flame Chain Gloves: //add 111500855
+Dragon Flame Chain Boots: //add 114500867
+
+
+***********************************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[Deutsch\German]GM Basic Codes+Item codes etc
+###############################################
+***********************************************
+
+Kinah has item number 182400001
+You can add kinah with
+
+//add 182400001 [amount]
+
+Exp.:
+
+//add player 182400001 5000
+
+
+//add
+Erstellt dir ein Item
+
+//addskill
+Gibt dem ausgewählten Spieler den Skill+skill level
+
+//addtitle
+Gib dem Spieler ein Titel *siehe titel liste*
+
+//announce
+Sendet eine Nachricht in alle Chats (und auch im Bildschirm, auch wenns auf englisch "ohne bildschirm" steht )
+
+//notice
+Sendet eine Nachricht in alle Chats und in die Bildschirmmitte
+
+//info
+Schau dir die Spieler Infos an
+
+//set level
+Setzt das level des ziels
+Maximal 50
+P.s.:  clique na sua imagem para diminuir 
+//set exp
+gibt dem Ziel Exp.
+P.s.:  Clique na imagem no canto inferior esquerdo para dar-se exp
+
+//set title
+gibt der Zielperson ein Titel
+P.s.:  Clique na imagem no canto inferior esquerdo para lhe dar um título 
+//set class
+Gibt dem ausgewählten Spieler eine Klasse (so braucht man keien Aufstiegs Quest)
+
+#Class ID's:
+Spoiler:
+
+Warrior - 0
+Gladiator - 1
+Templar - 2
+
+Scout - 3
+Assassin - 4
+Ranger - 5
+
+Mage - 6
+Sorcerer - 7
+Spirit Master - 8
+
+Priest - 9
+Cleric - 10
+Chanter - 11
+
+
+
+//weather
+Beispiele:
+//weather poeta 0 -> setz das wetter auf "Klar" also keine wolken etc
+//weather reset -> setzt das wetter im gazen spiel wieder auf normal.
+
+
+
+//speed
+Ändert deine Geschwindigkeit (%)
+PS: Es geht von 100-200
+
+//heal
+Füllt das leben des ziels auf.
+Achtung: wenn du ein Monster angeklickt hast, fülst du dessen leben auf
+gemein um bosse kurz evor sie tot sind wieder voll zu machen
+
+//kill
+tötet den Spieler
+
+//kick
+Schmeißt den Spieler vom Server
+
+//unstuck
+bringt dich zum Bindepunkt (noch nicht getested, ich denke es macht das ziel unbeweglich)
+
+//moveplayertoplayer
+Bringt Spieler 1 zu Spieler 2
+
+//movetome
+Bringt den Spieler zu dir
+
+//movetoplayer
+Bringt dich zum Spieler
+
+//moveto < X Y Z>
+teleportier zu XYZ Koordinaten
+
+//goto
+bringt dich zu einem ort
+
+#Nur für Admins:
+
+//system restart
+startet den Server neu
+
+//system shutdown
+Fährt den Server runter
+
+//spawn
+spawn npc template id
+
+//delete
+löscht den ausgewählten npc/monster spawn
+(er kommt nicht wieder//, außer nach server neustart)
+
+//save_spawn
+speichert alle spawn änderungen
+(ihr solltet keine spawns löschen und das dann speichern)
+
+//adddrop
+fügt ein itemdrop zur droppliste
+
+//zone
+prints your current zone
+(da ich noch nicht weiß, was es bewirkt, lass ich es so)
+
+//reload skill
+lädt alle skills neu
+
+//reload quest
+self explanatory
+
+//promote
+Gibt einem Spieler admin rechte
+rolemask= 1, 2 oder 3, 3= SuperAdmin
+
+//revoke characterName
+Setzt die admin rechte wieder zu normalen rechten
+
+#Nur für Developer:
+//fsc
+//advsendfakeserverpacket
+//sendfakeserverpacket
+//sendrawpacket
+
+//quest
+Nur für Developer zum testen der Quests
+
+//system
+Nur für Developers
+
+//ai
+Nur für Developers
+
+
+#Ausprobieren:
+
+
+//skillLearnService ----->
+} (erlernt automatisch alle skills)
+//givemissingskills------>
+
+
+//invul (sollte unbesiegbar machen)
+
+//sprison username (damit sollte man den User ins Gefängnis beamen)
+//rprison username(bringt den Spieler wieder zurück)
+
+
+*edit:
+
+//invis (sollte Unsichtbar machen)
+
+
+##
+# Legion command allows you to disband/setlevel/setpoints of a
+
+legion
+gameserver.administration.command.legion = 3
+
+# Remove command allow remove an item from player
+gameserver.administration.command.remove = 3
+
+# Prison command
+gameserver.administration.command.prison = 3
+
+
+Diamant-Set des alten Geistes
+
+
+#Machtscherben:
+
+angriff+100
+
+//add 169000002 1000 (1.000stück)
+
+erstklassige (die beste normale)
+
+//add 169000009 1000 (1.000stück)
+
+
+
+#Manasteine:
+(immer 100stück als vorrat )
+Spoiler:
+
+Tp+85
+//add 167000514 100
+
+Treffersicherheit+25
+//add 167000516 100
+
+Schildabwehr+25
+//add 167000521 100
+
+Phys. Krit.-Rate +15
+//add 167000522 100
+
+Parieren +25
+//add 16700052 100
+
+Manastein: Maximale Flugzeit +6
+nur Elyos
+//add 167000523 100
+
+Magiesche Treffersicherheit +12
+//add 167000541 100
+
+Magiewiderstand +12
+//add 167000542 100
+
+Magieverstärkung +25
+//add 167000519 100
+
+MP +85
+//add 167000515 100
+
+Ausweichen +15
+//add 167000517 100
+
+Angriff+5
+//add 167000516 100
+
+
+
+#Schilde
+Spoiler:
+
+
+Glänzender Adamantiumschild des handwerkers
+//add 115000387 1
+
+Glänzender Schild des schwarzen Drachen
+//add 115000753 1
+
+Schuppenschild des Anuhart-Elitesoldaten
+//add 115000858 1
+
+Schild des Elite-Archontentribuns (5% weniger spieler schaden)
+//add 115000889 1
+
+Mikarons Platte (eher für die Frauen )
+//add 115000820 1
+
+Glänzender Schild des Finsterdrachenkönigs (nur asmo)
+//add 115000759 1
+
+Glänzender Schild des weisen Drachenkönigs (nur elyos)
+//add 115000749 1
+
+Fenris-Schild (Superschild1)
+//add 115000829 1
+
+Tahabatas Speer (Superschild2)
+//add 115000860 1
+
+
+
+#Flügel
+(nur die besten)
+
+Spoiler:
+
+
+Schwungfeder der Schwarzwolken-Händler S401 (alle)
+//add 187050007 1
+
+[Ereignis] Abyss-Schwungfeder S402 (nur asmodier)
+//add 187050006 1
+
+[Ereignis] Daloshunerks Schwungfeder S402 (nur Elyos)
+//add 187050005 1
+
+
+
+#Färbemittel
+(sollten handelbar sein//)
+(nur Blütenblätter, Farbe schreib ich ran )
+(immer 5ér pakete)
+
+Spoiler:
+
+Brommel-Blütenblatt (gold)
+//add 169240010 5
+
+Lunime-Blütenblatt (gold2)
+//add 169240007 5
+
+Brombeer-Blütenblatt (lindgrün)
+//add 169240001 5
+
+Erdbeer-Blütenblatt (Meerblau)
+//add 169240006 5
+
+Pressa-Blütenblatt (Orange)
+//add 169240011 5
+
+Himbeer-Blütenblatt (rosa)
+//add 169240005 5
+
+Kirka-Blütenblatt (lila)
+//add 169240009 5
+
+Vinnus-Blütenblatt (Sehr schönes Blau )
+//add 169240008 5
+
+
+
+#Und 3 Beliebte Farben:
+(nicht Handelbar)
+
+Spoiler:
+
+Farbe: Echtrot
+//add 169220001 5
+
+Farbe: Echtschwarz
+//add 169220003 5
+
+Farbe: Heißes Rosarot
+//add 169220006 5
+
+
+
+__________________________________________________ ________________________________________
+
+Cool Spawns
+__________________________________________________ ________________________________________
+
+#Gute\Interessante Spawns:
+Spoiler:
+
+
+//spawn 215081 1 (spawnt Käptn Grogget, der droppt sehr viel unterschiedliches )
+
+Hauptmann Lahbri (abyss monster 999.513TP)
+//spawn 256115 1
+
+Jeshuchi der zweite Beschwörer (der hat 1.5mio Tp und droppt nur kinah, gut als gack^^)
+//spawn 212282 1
+
+Kommandant Gitimuka(droppt gute hosen^^ 1.2mioTP)
+//spawn 212307 1
+
+König Consierd (790.727TP 38-40ér dropps)
+//spawn 212648 1
+
+König Zugog (level 27, also was für kleine 504.427TP droppt blaue waffen)
+//spawn 212644 1
+
+Königin Alukina (1.5mio TP droppt einiges gutes level 46 Held)
+//spawn 213747 1
+
+Lestin Frostmähne(874.848TP Stufe 40Held droppt goldene helme + einiges eq+ magierwaffen)
+//spawn 212875 1
+
+Silicanimum der Erinnerung (672.735TP Stufe50 sieht lustig aus^^ )
+//spawn 214668 1
+
+Triroan der Instabile (Stufe 50, 837.110TP Theobomos)
+//spawn 214669 1
+
+Kommandohauptmann Inshar (Stufe 48 Heiron)
+//spawn 214157 1
+
+Medeus des Hasses(148.498TP Stufe45 Heiron)
+//spawn 211265 1
+
+Stabshauptmann Lahumu(mann beachte seinen kopf^^ Stufe 48 614.954TP Heiron)
+//spawn 214158 1
+
+__________________________________________________ ________________________________________
+
+#Superbosse: (1.5=1.5000.000Tp, immer nur millionen angaben, nur Legendäre, am besten für gruppen/allianzen)
+Spoiler:
+
+
+Akairun von Medeus(2.5Tp Stufe47 Heiron)
+//spawn 212008
+
+Bollvig das schwarze Herz (2.9 Tp Heiron)
+//spawn 212314 1
+
+Großhäuptling Saendukal (2.6 TP Stufe 40 Eltnen)
+//spawn 211040 1
+
+
+Großhäuptling Kasika (2.0TP Stufe40 Morheim)
+//spawn 212874 1
+
+Menotios (abyss 4.4TP Stufe 51)
+//spawn 251001 1
+
+Stellv. Brigadegeneral Hanuman (3.7TP Heiron Stufe 48)
+//spawn 212306 1
+
+
+Tobender Kraterr (Stufe 40 2.3TP Eltnen)
+//spawn 211715 1
+
+Zapiel der erste Beschützer (3.5TP Stufe 48 Heiron)
+//spawn 212283 1
+
+
+
+##Dredgion(gigantisches Superboss monster+zubehör Abyss):
+
+Boss: //spawn 276724 1 (3mio TP)
+Elitekämpfer: //spawn 276647 1
+//spawn 276650 1
+Geräte: //spawn 276722 1
+//spawn 276723 1
+Erfahrener Dredgion-Elitekämpfer (3.1mio TP)
+//spawn 276649 1
+
+__________________________________________________ ________________________________________
+
+
+#NPC´s\Asmo:
+Spoiler:
+
+
+Zemurrus Geist (ein starker elite geist )
+//spawn 203682 1
+
+Asmodier-Wächtergott-Generalsrekrut (abyss boss)
+//spawn 260005 1
+
+Kistenian (7.8mio TP// stufe 55// )
+//spawn 204753
+
+(Nur für Allianzen/GMs// nur aggro auf elyos):
+Nerita
+//spawn 204702 1 (Stufe 55////// über 10mio TP////)
+
+
+
+
+#NPC´s\Elyos
+Spoiler:
+
+
+Elyos-Wächtergott-Generalsveteran
+//spawn 260003 1
+
+Kimeia (6.2mio TP// Stufe 45)
+//spawn 203996
+
+Perento (Stufe 55////// über 10mio TP////)
+//spawn 204500 1
+
+
+
+
+Asmodae
+lvl 01-09 asmodian starting zone - Ishalgen - //moveto 220010000 850 2218 267
+lvl 10-20 asmodian city (flyzone) - Altgard - //moveto 220030000 1781 1930 261
+lvl 10-50 asmodian hauptstadt - Pandaemonium - //moveto 120010000 1268 1428 208
+lvl 19-40 asmodian - Morheim - //moveto 220020000 872 2180 337
+lvl 20-25 asmodian - Brusthonin - //moveto 220050000 2428 2298 13
+lvl 41-50 asmodian - Beluslan - //moveto 220040000 1967 2533 590
+lvl 50-55 asmodian - Gelkmaros - 2.0
+
+
+Elysea
+lvl 01-09 elyos starting zone - Poeta - //moveto 210010000 526 1461 106
+lvl 10-20 elyos city - Verteron - //moveto 210030000 1339 2195 143
+lvl 10-50 elyos hauptstadt - Sanctum - //moveto 110010000 1532 1511 565
+lvl 20-25 elyos - Eltnen - //moveto 210020000 1487 1466 300
+lvl 41-50 elyos - Theobomos - //moveto 210060000 1400 1550 31
+lvl 50-55 elyos - Inggison - 2.0
+
+
+!FLYZONE* Ereshuranta (Abyss) - //moveto 400010000 1365 1177 1516
+
+
+OTHER
+!* Interdiktah - //moveto 210040000 1508 1568 112
+!* Draupnir - //moveto 320080000 493 600 513 (central control room)
+!* Indratu (Castle Indratu) - //moveto 310090000 560 335 1016
+!* Inside of the Sky Temple of Arkanis //moveto 320050000 128 133 575
+!* Lepharist (Bio Experiment Lab) - //moveto 310050000 191 324 125
+!* Draupnir - //moveto 320080000 762 431 321 (beritra oracle chamber)
+!* Fire Temple - //moveto 320100000 148 455 142
+!* Alquimia - //moveto 320110000 545 527 200
+!* Player Prison 1- //moveto 510010000 229 257 50
+!mid-air* Azoturan (Castle Lehpar) - //moveto 310100000 359 410 1537
+
+NOT WORKING
+*- No Zone Name - //moveto 300010000 225 276 206
+*- Karamatis - //moveto 310010000 225 276 206
+*- Karamatis (not sure why there are two of these) - //moveto 310020000 225 276 206
+*- Aerdina (Abyss Gate) - //moveto 310030000 269 173 204
+*- Geranaia (Abyss Gate) - //moveto 310040000 269 173 204
+*- Fragment of Darkness - //moveto 310060000 1618 782 1188
+*- Fragment of Darkness (not sure why there are two of these) - //moveto 310070000 83 238 1222
+*- Sanctum Underground Arena - //moveto 310080000 276 185 162
+*- Narsass - //moveto 320010000 225 276 206
+*- Narsass (not sure why there are two of these) - //moveto 320020000 225 276 206
+*- Bregirun (Abyss Gate) - //moveto 320030000 269 175 204
+*- Nidalber (Abyss Gate) - //moveto 320040000 269 175 204
+*- Space of Oblivion - //moveto 320060000 1709 807 1226
+*- Space of Destiny - //moveto 320070000 256 252 126
+*- Triniel Underground Arena - //moveto 320090000 276 183 162
+*- Secret Prison - //moveto 320120000 454 553 225
+*- Player Prison 2- //moveto 520010000 229 257 50
+*- Test Basic - //moveto 900020000 151 135 20
+*- Test Server - //moveto 900030000 403 254 50
+*- Test Giant Monster - //moveto 900100000 245 323 20
+
+================
++++
+================================================== ==============
+
+Beruf/Crafting Skill Database Manipulation
+
+Oh, you want to have 500 instantly?
+Two ways.
+1 - edit mysql table player_skills. Just at the end you'll see 30000 and 40000 skills, but only if you gained this skill (went to master and pay ~5000)
+2 - ingame command addskill 30002 500. then 30003 500, then 40000,1,2,3,4,7,8,9. NO 5 and 6.
+
+Admin Command Boost:
+
+//addskill 40007 500
+
+30001 49 = Sammeln / 49 Pkt. / GATHERING_A
+30002 99 = Experte in Essenzgewinnung / 99 Pkt. / GATHERING_B
+30003 99 = Experte in Äthergewinnung / 99 Pkt. /AERIAL_GATHERING
+40002 499/500 = Meister Waffenherstellung / 499/500 Pkt. /WEAPONSMITH
+40007 499/500 = Experte/Meister Alchemie / 499/500 Pkt. /ALCHEMY
+
+Search in the skill_template:
+
+Quote Originally Posted by Magenik View Post
+//moveto 210050000 2400 1330 320 //moveto 210050000 2603 1525 340 //moveto 210050000 2750 2115 245 //moveto 210050000 750 1295 340 //moveto 210050000 1615 1610 230 //moveto 210050000 500 1100 400 //moveto 210050000 1036.4221 1747.709 240 //moveto 210050000 810 1420 265 //moveto 210050000 2495 326 505 //moveto 210050000 2580 333 528 //moveto 210050000 222 600 628
+
